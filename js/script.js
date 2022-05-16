@@ -9,10 +9,17 @@
  */
 function enterClicked() {
   // input
-  const street_name = document.getElementById("street-name").value
-  const street_number = parseInt(document.getElementById("street-number").value)
+  const localStorage = 0
 
+  //process
+  if (localStorage.hits)(
+    localStorage.hits = Number(localStorage.hits) + 1
+  )
+  else (
+    localStorage.hits = 1
+  )
+  
   // output
-  document.getElementById("address").innerHTML =
-    "You live on: " + street_name + ", house " + street_number + "."
+  document.getElementById("Clicks").innerHTML =
+    "You've Clicked " + localStorage + " time(s)"
 }
